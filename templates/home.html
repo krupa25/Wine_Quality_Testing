@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Quality of your wine</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <h1>Test Quality of your wine</h1>
    <form action="/wineDetails/" method="POST">
     {%csrf_token%}
     <div class="container">
-        <label for="alcohol">Alcohol:</label>
-        <input type="text" name="alcohol"><br><br>
-        <label for="malic_acid">Malic Acid:</label>
-        <input type="text" name="malic_acid"><br><br>
-        <label for="ash">Ash:</label>
-        <input type="text" name="ash"><br><br>
-        <label for="alcalinity_of_ash">Alcaliny of Ash:</label>
-        <input type="text" name="alcalinity_of_ash"><br><br>
-        <label for="magnesium">Magnesium:</label>
-        <input type="text" name="magnesium"><br><br>
-        <label for="total_phenols">Total phenols:</label>
-        <input type="text" name="total_phenols"><br><br>
-        <label for="flavanoids">Flavanoids:</label>
-        <input type="text" name="flavanoids"><br><br>
-        <label for="nonflavanoid_phenols">Nonflavanoid Phenols:</label>
-        <input type="text" name="nonflavanoid_phenols"><br><br>
-        <label for="proanthocyanins">Proanthocyanins:</label>
-        <input type="text" name="proanthocyanins"><br><br>
-        <label for="color_intensity">Color Intensity:</label>
-        <input type="text" name="color_intensity"><br><br>
-        <label for="hue">Hue:</label>
-        <input type="text" name="hue"><br><br>
-        <label for="od315_of_diluted_wines">Od31 of diluted wines:</label>
-        <input type="text" name="od315_of_diluted_wines"><br><br>
-        <label for="proline">Proline:</label>
-        <input type="text" name="proline"><br><br>
-        <button type="submit" class="submitbtn">Test</button>
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6">
+                <label for="alcohol">Alcohol:</label>
+                <input class="form-control" type="text" name="alcohol"><br><br>
+                <label for="malic_acid">Malic Acid:</label>
+                <input class="form-control" type="text" name="malic_acid"><br><br>
+                <label for="ash">Ash:</label>
+                <input class="form-control" type="text" name="ash"><br><br>
+                <label for="alcalinity_of_ash">Alcaliny of Ash:</label>
+                <input class="form-control" type="text" name="alcalinity_of_ash"><br><br>
+                <label for="magnesium">Magnesium:</label>
+                <input class="form-control" type="text" name="magnesium"><br><br>
+                <label for="total_phenols">Total phenols:</label>
+                <input class="form-control" type="text" name="total_phenols"><br><br>
+                <label for="flavanoids">Flavanoids:</label>
+                <input class="form-control" type="text" name="flavanoids"><br><br>
+                <label for="nonflavanoid_phenols">Nonflavanoid Phenols:</label>
+                <input class="form-control" type="text" name="nonflavanoid_phenols"><br><br>
+                <label for="proanthocyanins">Proanthocyanins:</label>
+                <input class="form-control" type="text" name="proanthocyanins"><br><br>
+                <label for="color_intensity">Color Intensity:</label>
+                <input class="form-control" type="text" name="color_intensity"><br><br>
+                <label for="hue">Hue:</label>
+                <input class="form-control" type="text" name="hue"><br><br>
+                <label for="od315_of_diluted_wines">Od31 of diluted wines:</label>
+                <input class="form-control" type="text" name="od315_of_diluted_wines"><br><br>
+                <label for="proline">Proline:</label>
+                <input class="form-control" type="text" name="proline"><br><br>
+                <button type="submit" class="submitbtn">Test</button>
+            </div>
+
+
+        </div>
 
     </div>
 </form> 
